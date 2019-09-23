@@ -1,7 +1,3 @@
-correct_number = rand(1..6).to_s
-
-correct_number
-
 def prompt_user
   puts "Guess a number from 1 to 6: "
 end
