@@ -14,6 +14,8 @@ end
 
 
 def guessing_cli(correct_number)
+  correct_number = rand(1..6)
+  correct_number.to_s
   prompt_user
   response = user_input
   if response == correct_number
