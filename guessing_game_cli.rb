@@ -13,7 +13,7 @@ def guessing_cli
   correct_number = rand(1..6)
   correct_number.to_s
   prompt_user
-  response = user_input
+  response = gets.chomp
   if response == correct_number
     return p "You guessed the correct number!"
   elsif response == 'exit'
