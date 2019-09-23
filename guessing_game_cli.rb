@@ -13,7 +13,7 @@ def user_input
 end
 
 
-def guessing_game(correct_number)
+def guessing_cli(correct_number)
   prompt_user
   response = user_input
   if response == correct_number
