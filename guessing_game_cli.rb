@@ -3,10 +3,6 @@ def prompt_user
 end
 
 
-def user_input
-  response = gets.chomp.strip
-  response
-end
 
 
 def guessing_cli
