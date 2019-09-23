@@ -13,7 +13,7 @@ def user_input
 end
 
 
-def guessing_cli(correct_number)
+def guessing_cli
   correct_number = rand(1..6)
   correct_number.to_s
   prompt_user
