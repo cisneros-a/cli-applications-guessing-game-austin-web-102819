@@ -1,22 +1,12 @@
-def prompt_user
-  puts "Guess a number from 1 to 6: "
-end
-
-
-
-
-def guessing_cli
+def run_guessing_game
   correct_number = rand(1..6)
-  correct_number.to_s
-  prompt_user
-  response = gets.chomp
-  if response == correct_number
-    return p "You guessed the correct number!"
-  elsif response == 'exit'
-    return p "Goodbye!"
+  puts "Guess a number between 1 and 6:"
+  input = gets.chomp
+  if input == correct_number.to_s
+    puts "You guessed the correct number!"
+  elsif input.downcase == "exit"
+    puts "Goodbye!"
   else
-    return p "Sorry! The computer guessed #{correct_number}"
+    puts "Sorry! The computer guessed #{rando}."
   end
 end
-
-guessing_game(correct_number)
